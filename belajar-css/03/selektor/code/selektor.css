@@ -1,0 +1,31 @@
+p {
+    color: blue;
+}
+
+/* disini kita menggunakan tag p, maka untuk menampilkan output dari elemen 
+tersebut maka gunakan tag p kembali */
+
+.pink {
+  color: white;
+  background: pink;
+  padding: 5px;
+}
+/* ini namnya selktor class, ia akan menampilkan warna pada background pada teks tertentu */
+
+.text-white {
+    color: white;
+}
+
+.bg-teal {
+    background: teal;
+}
+
+/* disini warna backgroud yang di tamplkan akan full sejajr dengan teks tersebut */
+
+input[type=text] {
+    background: none;
+    color: cyan;
+    padding: 10px;
+    border: 1px solid cyan;
+}
+/* ini adalah selktor ateibut yang dimana akan menampilkan sebuah kolom yang bisa kita ketikan sesuatu */
