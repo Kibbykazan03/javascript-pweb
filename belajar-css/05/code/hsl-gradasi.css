@@ -1,0 +1,8 @@
+h1 {
+    color: hsl(14, 68%, 65%);
+}
+
+h2 {
+    color: hsla(267, 80%, 45%, 0.6);
+}
+/* sama seperti rbga, yang dimana alpha digunakan untuk mengatur transparan */
