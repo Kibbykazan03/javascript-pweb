@@ -6,3 +6,8 @@
     padding: 0;
     margin: 0;
 }
+/* digunakan agar tidak menampilkan padding dan margin tersebut */
+
+selektor:psudo-class {
+  /* disini adalah definisi pada properti */
+}
