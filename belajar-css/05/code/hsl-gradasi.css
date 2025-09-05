@@ -6,3 +6,9 @@ h2 {
     color: hsla(267, 80%, 45%, 0.6);
 }
 /* sama seperti rbga, yang dimana alpha digunakan untuk mengatur transparan */
+
+h3 {
+  background: linear-gradient(90deg, rgb(194, 219, 252) 0%, rgb(4, 0, 241) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
