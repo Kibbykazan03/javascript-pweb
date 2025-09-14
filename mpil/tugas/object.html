@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Objek Javascript</title>
+
+    <script>
+        // script berguna untuk membungkus kode javascript di html
+        var person = {
+            firstName: "Kibby Kawena",
+            lastName: "Kazan",
+            showName: function(){
+                alert(Nama: ${this.firstName} ${this.lastName});
+            }
+        };
+        // var digunakan unutk mendeklarasikan variabel atau penyimpanan pada data
+
+        person.showName();
+    </script>
+
+     <script>
+        function Person(firstName, lastName){
+            // di sini kita buat properti
+            this.firstName = firstName;
+            this.lastName = lastName;
+
+            // ini bagian method
+            this.fullName = function(){
+                return ${this.firstName} ${this.lastName}
+            }
+            // return digunakan untuk memanggil atau mengembalikan nilai
+            this.showName = function(){
+                document.write(this.fullName());
+            }
+        }
+
+        var person1 = new Person("Kibby Kawena", "Kazan");
+        var person2 = new Person("XI", "Rekayasa Perangkat Lunak");
+        // disini kita membuat objek baru yang diberikan key "new" yang diberikan nilai paramenter "firts name" dan "last name"
+
+
+        person1.showName();
+        document.write("<br>");
+        person2.showName();
+    </script>
+
+
+</head>
+<body>
