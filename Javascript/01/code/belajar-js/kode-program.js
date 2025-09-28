@@ -1,0 +1,1 @@
+alert("Hello, ini adalah contoh menjalankan program JS eksternal!");
