@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan</title>
+</head>
+
+<body>
+    <h2>
+        Belajar mencetak array dengan Perulanagan
+    </h2>
+
+    <script>
+        var products = ["Gelang", "Bunga", "Boneka", "Cermin lucu", "silverqueen"];
+        // data array yang akan kita gunakan
+
+        document.write("<h3>Daftar Produk:</h3>");
+        //  ini akan tampil seperti judul list data array 
+
+        document.write("<ol>");
+        // digunakan untuk membuat list data berupa angka
+
+        for (let i = 0; i < products.length; i++)
+        // disini kita menggunakan perulangan untuk mencetak semua isi array
+         {
+            document.write(`<li>${products[i]}</li>`);
+        }
+    </script>
+</body>
+
+</html>
