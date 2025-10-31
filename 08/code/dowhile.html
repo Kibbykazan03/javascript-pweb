@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO/WHILE di JS</title>
+    <!-- disini kondisi akan di cek setelah pengulangan terjadi, sedangkan di while kondisi akan di cek saat awal atau sebelum pengulangan -->
+</head>
+
+<body>
+    <script>
+        var ulangi = confirm("Apakah anda mau mengulang?");;
+
+        var counter = 0;
+
+        do {
+            counter++;
+            ulangi = confirm("Yakinn nih mau diulangin?");
+        }
+         while (ulangi)
+
+        document.write("Perulangan telah dilakukan sebanyak " + counter + " kali");
+        // do/while apabila kita melakukan 1 kali perulangan, maka while yang berada didalam kurung akan di cek kodisinya sebelum lanjut 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan While di JS</title>
+    <!-- termasuk dalam perulangan uncounted loop. -->
+</head>
+
+<body>
+    <script>
+        var ulangi = confirm("Apakah anda mau mengulanginya?");
+        var counter = 0;
+
+        while (ulangi) {
+            var jawab = confirm("Yakin mau diulangi?")
+            // apanila kita terus menekan "oke" maka perulangan akan terus berlanjut
+            // dan apabila kita menekan "cancel" maka perulangan telah berhenti dan akan menampilkan jumlah konfirmasi
+            // konfirmasi pilihan kita
+            counter++;
+            if (jawab == false)
+             {
+                ulangi = false;
+            }
+        }
+
+        document.write("Perulangan sudah dilakukan sebanyak " + counter + " kali");
+        // akan menampilkan seberapa banyak konfirmasi perulangan yang kita lakukan
+    </script>
+</body>
+
+</html>
