@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Math.floor()</title>
+</head>
+<body>
+  <h2>Membulatkan Angka ke Bawah (Math.floor)</h2>
+  <input type="number" id="angka" placeholder="Masukkan angka">
+  <button onclick="bulatkan()">Bulatkan ke bawah</button>
+  <p id="hasil"></p>
+
+  <script>
+    function bulatkan() {
+      let nilai = parseFloat(document.getElementById("angka").value);
+      let hasil = Math.floor(nilai);
+      document.getElementById("hasil").innerText = 
+        `Hasil pembulatan ke bawah dari ${nilai} adalah ${hasil}`;
+    }
+  </script>
+</body>
+</html>
