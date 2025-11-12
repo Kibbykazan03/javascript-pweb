@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event mouse</title>
+</head>
+<body>
+    <h3>
+        Mempelajari Evenet Mouse
+    </h3>
+
+    <p>
+        Event Mouse adalah event yang dipicu oleh aktivitas mouse atau tap pada layar sentuh. Beberapa contoh event mouse
+        antara lain click, dbclick, mouseover, mouseout, mousemove, mousedown, mouseup, dll.
+    </p>
+    <br>
+
+    <button id="btn-enter">Mouse Enter</button>
+  <button id="btn-hover">Hover</button>
+  <button id="btn-out">Mouse Out</button>
+
+  <script>
+    const btnEnter = document.getElementById("btn-enter");
+    const btnHover = document.getElementById("btn-hover");
+    const btnOut = document.getElementById("btn-out");
+
+    btnEnter.addEventListener("mouseenter", function(event) {
+      event.target.innerText = "Mouse udah masuk nihh prend";
+    });
+
+    btnOut.addEventListener("mouseout", function(event) {
+      event.target.innerText = "Mouse udah log out tuh";
+    });
+
+    btnHover.addEventListener("mouseover", function(event){
+      event.target.innerText = "Mouse ada di atas elemen noh";
+    });
+  </script>
+
+</body>
+</html>
