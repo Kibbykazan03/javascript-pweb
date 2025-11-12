@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar event dbclick</title>
+</head>
+
+<body>
+    <h2>
+        mempelajari event double click (dbclick)
+
+    </h2>
+
+    <p>
+        sama seperti event click, event dbclick juga termasuk dalam Mouse Event. Hanya saja event dbclick ini dipicu
+        ketika kita melakukan double klik pada sebuah elemen.
+    </p>
+
+    <button id="btn-double">tap tap tombol</button>
+
+    <script>
+        const btnLogin = document.getElementById("btn-double");
+        btnLogin.addEventListener("dblclick", function () {
+            alert("OKKKKEHH MANTAPP");
+        });
+    </script>
+
+</body>
+
+</html>
