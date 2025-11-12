@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event klik</title>
+</head>
+<body>
+
+    <h2>
+        mempelajari event click
+    </h2>
+    <p>
+
+        Event klik termasuk dalam Mouse Event, karena pemicunya adalah aktivitas klik dari mouse atau tap (jika di HP).
+
+    </p>
+
+      <button onclick="hello()">Halloooo</button>
+  <button id="hello-petanikode">Holaa amigos</button>
+
+  <script>
+    function hello(){
+      alert("Hello man teman");
+    }
+
+    const btnLogin = document.getElementById("hello-petanikode");
+    btnLogin.addEventListener("click", function(){
+      alert("Hello haloo halooo");
+    });
+  </script>
+</body>
+</html>
