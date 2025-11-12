@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Change</title>
+</head>
+
+<body>
+
+    <h3>
+        Mempelajari Event Change
+    </h3>
+
+    <p>
+        Event Change adalah event yang dipicu ketika nilai dari sebuah elemen berubah. Biasanya event ini
+        digunakan pada elemen form seperti input, select, dan textarea.
+    </p>
+
+    <div id="info"></div>
+    <label for="buah">Pilih Buah</label>
+    <select name="buah" id="buah">
+        <option>Beli tas</option>
+        <option>Beli skincare</option>
+        <option>Beli baju</option>
+    </select>
+
+    <script>
+        const buah = document.getElementById('buah');
+        const info = document.getElementById('info');
+
+        buah.addEventListener('change', function (e) {
+            info.innerText = `Anda memilih: ${e.target.value}`;
+        });
+    </script>
+
+</body>
+
+</html>
